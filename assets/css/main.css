@@ -2360,6 +2360,16 @@
 				width: 100%;
 			}
 
+		.image.pet {
+			display: block;
+			width: 20%;
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+			.image.pet img {
+				width: 100%;
+			}
+
 /* List */
 
 	ol {
