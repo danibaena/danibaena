@@ -1775,7 +1775,7 @@
 		resize: none;
 	  }
 	a {
-		color: #bbbbbb;
+		color: #dfdfdf;
 	}
 
 	strong, b {
@@ -2028,6 +2028,7 @@
 
 	form {
 		margin: 0 0 2rem 0;
+		text-align: left;
 	}
 
 		form .field {
@@ -2036,7 +2037,7 @@
 
 			form .field.half {
 				display: inline-block;
-				width: 48%;
+				width: 48.5%;
 			}
 
 				form .field.half.first {
@@ -2889,7 +2890,7 @@
 
 		.wrapper.style2 {
 			background-color: #f2f2f2;
-			color: #a6a6a6;
+			color: #555;
 		}
 
 		.wrapper.style2 .box .content header h2 {
@@ -2988,7 +2989,7 @@
 					.wrapper.style2 input[type="button"].alt.icon:before,
 					.wrapper.style2 button.alt.icon:before,
 					.wrapper.style2 .button.alt.icon:before {
-						color: #999999;
+						color: #666666;
 					}
 
 				.wrapper.style2 input[type="submit"].special,
@@ -3044,7 +3045,7 @@
 
 			.wrapper.style2 input[type="checkbox"] + label,
 			.wrapper.style2 input[type="radio"] + label {
-				color: #a6a6a6;
+				color: #666;
 			}
 
 				.wrapper.style2 input[type="checkbox"] + label:before,
@@ -3067,23 +3068,23 @@
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style2 :-moz-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style2 ::-moz-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style2 :-ms-input-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style2 .formerize-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style2 ul.alt li {
@@ -3106,7 +3107,7 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #999999;
+				color: #444;
 				font-size: 1.25rem;
 				margin-top: -1rem;
 				font-style: italic;
@@ -3139,7 +3140,7 @@
 
 		.wrapper.style3 {
 			background-color: #000;
-			color: #bfbfbf;
+			color: #dfdfdf;
 			background-image: url(../../images/metropolis.jpg);
 			background-size: cover;
 			background-attachment: fixed;
@@ -3239,7 +3240,7 @@
 					.wrapper.style3 input[type="button"].alt.icon:before,
 					.wrapper.style3 button.alt.icon:before,
 					.wrapper.style3 .button.alt.icon:before {
-						color: #999999;
+						color: #666666;
 					}
 
 				.wrapper.style3 input[type="submit"].special,
@@ -3318,23 +3319,23 @@
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style3 :-moz-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style3 ::-moz-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style3 :-ms-input-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style3 .formerize-placeholder {
-				color: #999999 !important;
+				color: #666666 !important;
 			}
 
 			.wrapper.style3 ul.alt li {
@@ -3342,7 +3343,7 @@
 			}
 
 			.wrapper.style3 header p {
-				color: #999999;
+				color: #666666;
 			}
 
 			.wrapper.style3 table tbody tr {
@@ -3496,7 +3497,7 @@
 
 	#header {
 		background: rgba(0, 0, 0, 0.75);
-		color: #a6a6a6;
+		color: #666;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3876,7 +3877,7 @@
 		}
 
 		#banner p {
-			color: rgba(255, 255, 255, 0.8);
+			color: rgba(255, 255, 255, 0.9);
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
 		}
