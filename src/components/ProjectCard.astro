@@ -1,0 +1,61 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  tech: string[];
+  url?: string;
+  github?: string;
+  image?: string;
+}
+
+const { name, description, tech, url, github, image } = Astro.props;
+---
+
+<div class="rounded-2xl border border-neutral-800 bg-neutral-900/50 overflow-hidden transition-colors hover:border-neutral-700">
+  {image && (
+    <div class="h-48 overflow-hidden">
+      <img
+        src={image}
+        alt={name}
+        class="h-full w-full object-cover"
+        loading="lazy"
+      />
+    </div>
+  )}
+
+  <div class="p-8">
+    <h3 class="mb-2 text-xl font-semibold text-white">{name}</h3>
+    <p class="mb-4 text-sm text-neutral-400">{description}</p>
+
+    <div class="mb-4 flex flex-wrap gap-2">
+      {tech.map((t) => (
+        <span class="rounded-full bg-neutral-800 px-3 py-1 text-xs text-neutral-400">
+          {t}
+        </span>
+      ))}
+    </div>
+
+    <div class="flex gap-4">
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm text-primary transition-colors hover:text-primary-light"
+        >
+          Live demo &rarr;
+        </a>
+      )}
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm text-neutral-500 transition-colors hover:text-neutral-300"
+        >
+          Source code
+        </a>
+      )}
+    </div>
+  </div>
+</div>

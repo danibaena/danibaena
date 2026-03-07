@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Experience from "../components/Experience.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Daniel Baena — Staff Software Engineer">
+  <Header />
+  <main>
+    <Hero />
+    <About />
+    <Skills />
+    <Experience />
+
+    {/* Madrid photo divider */}
+    <div class="relative h-64 overflow-hidden sm:h-80">
+      <img
+        src="/images/pictures/metropolis.jpg"
+        alt="Metropolis building, Madrid"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950"></div>
+    </div>
+
+    <ContactForm />
+  </main>
+  <Footer />
+</Layout>
