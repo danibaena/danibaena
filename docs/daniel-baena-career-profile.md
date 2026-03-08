@@ -22,6 +22,7 @@
 ## 2. Complete Work History
 
 ### Ctaima / Twind — SaaS for Contractor Access Control
+
 **Staff Software Engineer, Feb 2025 – Present (~1 year)**
 
 This role is **completely missing** from the website and CV.
@@ -29,6 +30,7 @@ This role is **completely missing** from the website and CV.
 **What he built (verified from 240 PRs + 284 commits across twind-ops org):**
 
 Frontend (TwindWeb — 230 PRs, 233 commits):
+
 - Architected and built a **React + TypeScript monorepo from scratch** using TurboRepo, Vite, TanStack Router/Query
 - Created a **shadcn-based design system** with component library, design tokens, and Storybook (deployed via CloudFront)
 - Set up the entire **DX toolchain**: ESLint, Prettier, git hooks, turbo generators for new packages
@@ -43,6 +45,7 @@ Frontend (TwindWeb — 230 PRs, 233 commits):
 - Vite code-splitting optimization, loading states, auth context wiring
 
 Mobile (TwindMobile — 3 PRs, 51 commits):
+
 - Built the **entire mobile app from scratch**: Expo SDK 54, React Native 0.81, React 19
 - **NativeWind** (Tailwind for RN), Expo Router (file-based routing)
 - OAuth with **Azure AD B2C** (expo-auth-session + expo-secure-store)
@@ -55,11 +58,13 @@ Mobile (TwindMobile — 3 PRs, 51 commits):
 - PostHog analytics, toast notifications, TanStack Query with useSafeMutation
 
 Infra/Cross-cutting:
+
 - AWS infrastructure via CDK for Storybook deployment (CloudFront + S3)
 - CI pipelines with npm cache optimization, changesets integration
 - OpenAPI client automation across repos (TwindApi-OpenApi → TwindWeb + TwindMobile)
 
 **Key achievement summary (use these for the CV — specific but not company-revealing):**
+
 - Architected and delivered a **React monorepo with design system, 3 apps, and shared packages** — 230+ PRs in 9 months
 - Built a **React Native mobile app from zero to production** (iOS + Android) with offline-first sync, QR scanning, and OAuth
 - Set up **end-to-end CI/CD**: GitHub Actions with affected-based testing, automated OpenAPI client generation, EAS build/submit to app stores
@@ -70,6 +75,7 @@ Infra/Cross-cutting:
 ---
 
 ### Merlyn Mind (prev. Emergence AI) — EdTech AI Assistant for Classrooms
+
 **Staff Frontend Software Engineer, Sep 2023 – Feb 2025 (~1.5 years)**
 
 - Developed several products from scratch: chatbot for classrooms, Kahoot-like tools for teachers/students
@@ -83,6 +89,7 @@ Infra/Cross-cutting:
 ---
 
 ### Eventbrite — Real Life & Online Events Marketplace
+
 **Senior Software Engineer, Jul 2021 – Sep 2023 (~2.2 years)**
 
 - Large-scale challenges, global reach
@@ -94,6 +101,7 @@ Infra/Cross-cutting:
 ---
 
 ### Alea Soluciones — Fiber Optics Networks
+
 **Senior Full Stack Developer, Apr 2018 – Jul 2021 (~3.3 years)**
 
 - Software Craftsmanship culture: Python, NGINX, Docker, Jenkins, React, Redis, PostgreSQL, RabbitMQ, REST APIs
@@ -104,6 +112,7 @@ Infra/Cross-cutting:
 ---
 
 ### Machiina — Product & Service Design Agency
+
 **Senior Full Stack Developer, Oct 2016 – Mar 2018 (~1.5 years)**
 
 - Implemented Carrefour e-Commerce frontends (Supermercado, Bodega): HTML5, jQuery, CSS3, responsive
@@ -113,6 +122,7 @@ Infra/Cross-cutting:
 ---
 
 ### Ezzing Solar — Photovoltaic Solar Energy Startup
+
 **Backend Developer, Jan 2016 – Oct 2016 (~10 months)**
 
 - Fast-paced startup, meaningful mission
@@ -121,6 +131,7 @@ Infra/Cross-cutting:
 ---
 
 ### h4ckademy — Bootcamp & Open Source Project
+
 **Backend Developer, Oct 2015 – Dec 2015 (~3 months)**
 
 - Google Campus Madrid, learning by doing
@@ -138,6 +149,7 @@ Infra/Cross-cutting:
 ## 4. Technical Skills (Current, Verified)
 
 ### Frontend (Primary strength)
+
 - **React 19**, TypeScript 5.x, Next.js
 - **TanStack** (Query v5, Router)
 - **Tailwind CSS**, NativeWind, ShadCN/RadixUI, Styled Components
@@ -148,6 +160,7 @@ Infra/Cross-cutting:
 - Accessibility (A11y)
 
 ### Mobile
+
 - **React Native 0.81**, Expo SDK 54, Expo Router
 - NativeWind (Tailwind for RN)
 - WatermelonDB (offline-first)
@@ -155,18 +168,21 @@ Infra/Cross-cutting:
 - EAS Build/Submit, Maestro E2E testing
 
 ### Backend
+
 - **Node.js**, Python, PHP (Laravel), Kotlin (exposure)
 - REST APIs, gRPC, tRPC
 - PostgreSQL, Redis, RabbitMQ, DynamoDB, Kafka, Celery
 - Hexagonal Architecture, Event-Driven Architecture, DDD
 
 ### Infrastructure & DevOps
+
 - **AWS**: CDK, ECS Fargate, S3, CloudFront, Lambda, ECR
 - Terraform, Docker, Kubernetes
 - **CI/CD**: GitHub Actions (advanced — affected-based filtering, reusable workflows, parallel jobs), Jenkins, CircleCI
 - Git (advanced), trunk-based development
 
 ### Architecture & Patterns
+
 - Monorepo (TurboRepo) — built from scratch twice (Merlyn Mind + Ctaima)
 - Design systems / component libraries
 - Offline-first mobile architecture
@@ -174,11 +190,13 @@ Infra/Cross-cutting:
 - BFF patterns (and knowing when to remove them)
 
 ### AI & Tooling
+
 - Claude Code, GitHub Copilot, ChatGPT
 - AI-assisted development workflows (skills, ADR automation)
 - Built an incident investigation agent (Claude Code + PagerDuty)
 
 ### Methodologies
+
 - TDD/BDD, Agile, eXtreme Programming
 - Pair programming, mentoring
 - Product-minded engineering
@@ -188,17 +206,18 @@ Infra/Cross-cutting:
 
 ## 5. Personal Projects (from GitHub)
 
-| Project | Tech | Description |
-|---|---|---|
-| bitcoin-game | TypeScript | Bitcoin-related game (recent, 2025) |
-| madridpublictransportcard | React, TypeScript, Hooks, Styled Components | Track Madrid transport card expiry, save to calendar. Hosted on Netlify |
-| madridtransportcard | Node.js | API server for Madrid Transport Card |
-| Pistonify | JavaScript | Engine for consuming APIs (h4ckademy open source project) |
-| property_based_testing_poc | Python | Property-based testing proof of concept |
-| sesame_autochecker | JavaScript | Automation tool |
-| userscripts | JavaScript | Greasemonkey/Tampermonkey personal userscripts |
+| Project                    | Tech                                        | Description                                                             |
+| -------------------------- | ------------------------------------------- | ----------------------------------------------------------------------- |
+| bitcoin-game               | TypeScript                                  | Bitcoin-related game (recent, 2025)                                     |
+| madridpublictransportcard  | React, TypeScript, Hooks, Styled Components | Track Madrid transport card expiry, save to calendar. Hosted on Netlify |
+| madridtransportcard        | Node.js                                     | API server for Madrid Transport Card                                    |
+| Pistonify                  | JavaScript                                  | Engine for consuming APIs (h4ckademy open source project)               |
+| property_based_testing_poc | Python                                      | Property-based testing proof of concept                                 |
+| sesame_autochecker         | JavaScript                                  | Automation tool                                                         |
+| userscripts                | JavaScript                                  | Greasemonkey/Tampermonkey personal userscripts                          |
 
 ### Open Source Contributions (forks with commits)
+
 - **mamba** — Python BDD testing framework
 - **expects** — Python TDD/BDD assertion library
 - **consul** — Open Government and E-Participation (Ruby)
@@ -209,6 +228,7 @@ Infra/Cross-cutting:
 ## 6. Website Audit (danibaena.com)
 
 ### Current State
+
 - Static HTML site, minimalist design, hosted likely on Netlify
 - Pages: Home, CV Resume (PDF download), Pet Projects, Photography (Flickr link), Contact, Credits
 - Built with basic HTML/CSS — no framework
@@ -217,18 +237,18 @@ Infra/Cross-cutting:
 
 **Content gaps:**
 
-| Issue | Fix |
-|---|---|
-| Missing Ctaima/Twind role entirely | Add as current role — it's 1 year of Staff-level work |
-| "9 years experience" | Update to "10+ years" |
-| Title "Staff Full Stack Developer" on site | Align with CV: "Staff Software Engineer" (or pick a target: "Staff Frontend Engineer") |
-| Skills list outdated | No React Native, Expo, TanStack, Tailwind, NativeWind, Zod, PostHog, Tolgee, EAS, Maestro |
-| Still lists React 16+ | Should be React 19 |
-| Pet projects page shows only 1 project | Add bitcoin-game, Pistonify, property-based testing, open source contributions |
-| CV is a PDF link only | Should also be an HTML page for SEO/scannability |
-| No mention of mobile development | Built an entire RN app — should be prominent |
-| No mention of monorepo expertise | Built monorepos from scratch at 2 companies |
-| No mention of AI tooling | Built an incident agent, uses Claude Code professionally |
+| Issue                                      | Fix                                                                                       |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Missing Ctaima/Twind role entirely         | Add as current role — it's 1 year of Staff-level work                                     |
+| "9 years experience"                       | Update to "10+ years"                                                                     |
+| Title "Staff Full Stack Developer" on site | Align with CV: "Staff Software Engineer" (or pick a target: "Staff Frontend Engineer")    |
+| Skills list outdated                       | No React Native, Expo, TanStack, Tailwind, NativeWind, Zod, PostHog, Tolgee, EAS, Maestro |
+| Still lists React 16+                      | Should be React 19                                                                        |
+| Pet projects page shows only 1 project     | Add bitcoin-game, Pistonify, property-based testing, open source contributions            |
+| CV is a PDF link only                      | Should also be an HTML page for SEO/scannability                                          |
+| No mention of mobile development           | Built an entire RN app — should be prominent                                              |
+| No mention of monorepo expertise           | Built monorepos from scratch at 2 companies                                               |
+| No mention of AI tooling                   | Built an incident agent, uses Claude Code professionally                                  |
 
 **Missing sections entirely:**
 
@@ -238,6 +258,7 @@ Infra/Cross-cutting:
 4. **Open source section** — mamba, expects, consul, react-native-calendars contributions are invisible
 
 **Design/UX issues:**
+
 - Photography goes to external Flickr — feels disconnected
 - Credits page is dead weight
 - No dark mode (minor but expected for dev portfolios in 2026)
@@ -248,6 +269,7 @@ Infra/Cross-cutting:
 ## 7. CV Resume Update Instructions
 
 ### Current CV Problems
+
 1. **Missing current role** (Ctaima/Twind, Feb 2025 – Present)
 2. **Skills section is buried** at the bottom as "Technical Extras" — should be more prominent
 3. **No education section** visible
@@ -312,19 +334,20 @@ HOBBIES [reduce to one line or remove to fit the missing role]
 ## 8. Positioning Strategy
 
 ### For Staff Frontend Engineer roles
+
 Lead with:
+
 1. Built design systems + component libraries used across monorepo apps (twice — Merlyn Mind + Ctaima)
 2. Architected a React Native mobile app from scratch with offline-first sync
 3. Owned 230+ PRs in 9 months — full product ownership
 4. Previous Staff at AI company (Merlyn Mind) + Senior at Eventbrite (global scale, Tier 1 services)
 
 ### For Full Stack roles
-Add:
-5. Backend experience: gRPC migration at Eventbrite, Python services at Alea, Laravel at Ezzing/Machiina
-6. AWS infrastructure: CDK, ECS Fargate, Lambda, CloudFront
-7. Database breadth: PostgreSQL, Redis, RabbitMQ, DynamoDB, WatermelonDB
+
+Add: 5. Backend experience: gRPC migration at Eventbrite, Python services at Alea, Laravel at Ezzing/Machiina 6. AWS infrastructure: CDK, ECS Fargate, Lambda, CloudFront 7. Database breadth: PostgreSQL, Redis, RabbitMQ, DynamoDB, WatermelonDB
 
 ### Differentiator
+
 Most frontend staff engineers can't set up CDK infrastructure, build EAS deployment pipelines, or architect offline-first mobile apps. Daniel goes from Figma design tokens all the way down to CloudFront cache invalidation. That full vertical ownership is rare and valuable.
 
 ---

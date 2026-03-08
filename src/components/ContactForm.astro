@@ -5,15 +5,11 @@
 <section id="contact" class="px-6 py-24">
   <div class="mx-auto max-w-2xl">
     <div class="mb-12 text-center">
-      <h2 class="mb-2 font-mono text-sm text-primary">Get in touch</h2>
+      <h2 class="text-primary mb-2 font-mono text-sm">Get in touch</h2>
       <h3 class="text-3xl font-bold text-white">Contact me</h3>
     </div>
 
-    <form
-      action="https://formspree.io/f/xoqprjne"
-      method="POST"
-      class="space-y-6"
-    >
+    <form action="https://formspree.io/f/xoqprjne" method="POST" class="space-y-6">
       <div class="grid gap-6 sm:grid-cols-2">
         <div>
           <label for="name" class="mb-2 block text-sm text-neutral-400">Name</label>
@@ -23,7 +19,7 @@
             name="name"
             required
             placeholder="Everyone has one right?"
-            class="w-full rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 outline-none transition-colors focus:border-primary"
+            class="focus:border-primary w-full rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 transition-colors outline-none"
           />
         </div>
         <div>
@@ -34,7 +30,7 @@
             name="_replyto"
             required
             placeholder="your_username@your_fancy_domain.com"
-            class="w-full rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 outline-none transition-colors focus:border-primary"
+            class="focus:border-primary w-full rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 transition-colors outline-none"
           />
         </div>
       </div>
@@ -47,13 +43,13 @@
           rows="6"
           required
           placeholder="Hey Dani, I want to reach out to you to talk about..."
-          class="w-full rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 outline-none transition-colors focus:border-primary resize-none"
+          class="focus:border-primary w-full resize-none rounded-lg border border-neutral-800 bg-neutral-900/50 px-4 py-3 text-sm text-white placeholder-neutral-600 transition-colors outline-none"
         ></textarea>
       </div>
 
       <button
         type="submit"
-        class="w-full rounded-lg bg-primary px-6 py-3 font-medium text-neutral-950 transition-colors hover:bg-primary-light sm:w-auto"
+        class="bg-primary hover:bg-primary-light w-full rounded-lg px-6 py-3 font-medium text-neutral-950 transition-colors sm:w-auto"
       >
         Send message
       </button>

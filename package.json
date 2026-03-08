@@ -5,16 +5,28 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
+    "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.5.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.0",
     "@tailwindcss/vite": "^4.1.0",
+    "prettier": "^3.5.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.0",
+    "pretty-quick": "^4.1.0",
+    "simple-git-hooks": "^2.13.0",
     "tailwindcss": "^4.1.0",
     "typescript": "^5.9.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx pretty-quick --staged"
   }
 }

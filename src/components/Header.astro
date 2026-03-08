@@ -13,28 +13,27 @@ const navItems = [
   class="fixed top-0 z-50 w-full border-b border-neutral-800/50 bg-neutral-950/80 backdrop-blur-md transition-all"
 >
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-lg font-semibold text-white hover:text-primary transition-colors">
+    <a href="/" class="hover:text-primary text-lg font-semibold text-white transition-colors">
       danibaena
     </a>
 
     {/* Desktop nav */}
     <ul class="hidden items-center gap-8 md:flex">
-      {navItems.map((item) => (
-        <li>
-          <a
-            href={item.href}
-            class="text-sm text-neutral-400 transition-colors hover:text-white"
-          >
-            {item.label}
-          </a>
-        </li>
-      ))}
+      {
+        navItems.map((item) => (
+          <li>
+            <a href={item.href} class="text-sm text-neutral-400 transition-colors hover:text-white">
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
       <li>
         <a
           href="/pdf/DanielBaenaResume.pdf"
           target="_blank"
           rel="noopener"
-          class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-neutral-950 transition-colors hover:bg-primary-light"
+          class="bg-primary hover:bg-primary-light rounded-lg px-4 py-2 text-sm font-medium text-neutral-950 transition-colors"
         >
           Resume
         </a>
@@ -60,22 +59,24 @@ const navItems = [
     class="hidden border-t border-neutral-800/50 bg-neutral-950/95 backdrop-blur-md md:hidden"
   >
     <ul class="flex flex-col px-6 py-4">
-      {navItems.map((item) => (
-        <li>
-          <a
-            href={item.href}
-            class="block py-3 text-neutral-400 transition-colors hover:text-white"
-          >
-            {item.label}
-          </a>
-        </li>
-      ))}
+      {
+        navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="block py-3 text-neutral-400 transition-colors hover:text-white"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
       <li>
         <a
           href="/pdf/DanielBaenaResume.pdf"
           target="_blank"
           rel="noopener"
-          class="mt-2 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-neutral-950"
+          class="bg-primary mt-2 inline-block rounded-lg px-4 py-2 text-sm font-medium text-neutral-950"
         >
           Resume
         </a>
