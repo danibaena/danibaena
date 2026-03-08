@@ -8,6 +8,8 @@ const {
   title,
   description = "Daniel Baena — Staff Product Engineer based in Madrid. 10+ years building products with React, TypeScript, and cloud infrastructure.",
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -18,12 +20,31 @@ const {
     <meta name="description" content={description} />
     <title>{title}</title>
 
+    <link rel="canonical" href={canonicalURL} />
+
+    {/* Open Graph */}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL("/images/danibaena.jpg", Astro.site)} />
+    <meta property="og:locale" content="en_US" />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@dani_baena" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL("/images/danibaena.jpg", Astro.site)} />
+
+    {/* Favicons */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    {/* Fonts — non-blocking */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,6 +64,31 @@ const {
         rel="stylesheet"
       />
     </noscript>
+
+    {/* JSON-LD Structured Data */}
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Daniel Baena",
+        jobTitle: "Staff Product Engineer",
+        url: "https://danibaena.com",
+        email: "me@danibaena.com",
+        image: "https://danibaena.com/images/danibaena.jpg",
+        sameAs: [
+          "https://github.com/danibaena",
+          "https://www.linkedin.com/in/danibaena/",
+          "https://twitter.com/dani_baena",
+        ],
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Madrid",
+          addressCountry: "ES",
+        },
+        knowsAbout: ["React", "TypeScript", "React Native", "AWS", "Tailwind CSS", "Node.js"],
+      })}
+    />
   </head>
   <body class="min-h-screen font-sans">
     <slot />
