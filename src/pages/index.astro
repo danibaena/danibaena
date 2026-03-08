@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -7,10 +8,11 @@ import Skills from "../components/Skills.astro";
 import Experience from "../components/Experience.astro";
 import ContactForm from "../components/ContactForm.astro";
 import Footer from "../components/Footer.astro";
+import metropolis from "../../public/images/pictures/metropolis.jpg";
 import "../styles/global.css";
 ---
 
-<Layout title="Daniel Baena — Staff Software Engineer">
+<Layout title="Daniel Baena — Staff Product Engineer">
   <Header />
   <main>
     <Hero />
@@ -20,10 +22,13 @@ import "../styles/global.css";
 
     {/* Madrid photo divider */}
     <div class="relative h-64 overflow-hidden sm:h-80">
-      <img
-        src="/images/pictures/metropolis.jpg"
+      <Image
+        src={metropolis}
         alt="Metropolis building, Madrid"
         class="h-full w-full object-cover"
+        widths={[640, 1024, 1440]}
+        sizes="100vw"
+        quality={70}
         loading="lazy"
       />
       <div
